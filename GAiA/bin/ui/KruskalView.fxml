@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="kruskalPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="751.0" styleClass="background" stylesheets="@kruskal.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.KruskalView">
+   <children>
+      <Text layoutX="64.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adjacency Matrix:*" />
+      <TextArea fx:id="adjacencyMatrixKruskal" layoutX="194.0" layoutY="168.0" prefHeight="120.0" prefWidth="174.0" wrapText="true" />
+      <Text layoutX="70.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Solution:" />
+      <TextArea fx:id="outputKruskal" editable="false" layoutX="150.0" layoutY="316.0" prefHeight="126.0" prefWidth="556.0" wrapText="true" />
+      <Button fx:id="calculateKruskal" layoutX="509.0" layoutY="194.0" mnemonicParsing="false" onAction="#calculateKruskal" text="Calculate" />
+      <Text layoutX="242.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kruskal's Algorithm" wrappingWidth="266.859375">
+         <font>
+            <Font name="Bell MT Bold" size="29.0" />
+         </font>
+      </Text>
+      <Button fx:id="clearKruskal" layoutX="652.0" layoutY="194.0" mnemonicParsing="false" onAction="#clearScreen" text="Clear" />
+      <CheckBox fx:id="showTimeBox" layoutX="70.0" layoutY="475.0" mnemonicParsing="false" onAction="#showTime" text="Show time taken" />
+      <TextArea fx:id="timeArea" editable="false" layoutX="215.0" layoutY="462.0" prefHeight="48.0" prefWidth="491.0" wrapText="true" />
+      <Text layoutX="257.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(results in a minimum weight spanning tree)" wrappingWidth="236.6708984375">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="63.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Format preferrence: entries separated by &quot;,&quot; each row on a new line" wrappingWidth="127.00000520050526">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

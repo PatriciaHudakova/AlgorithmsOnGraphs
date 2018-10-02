@@ -1,0 +1,9 @@
+.background {
+	-fx-background-color: #f2e6ff;
+}
+.button {
+	-fx-border-color: purple;
+}
+.div {
+	-fx-border-color: coral;
+}
