@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="vertexColouringView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" styleClass="background" stylesheets="@vertexColouring.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.VertexColView">
+   <children>
+      <Text layoutX="206.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vertex Colouring Algorithm">
+         <font>
+            <Font name="Bell MT Bold" size="27.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="adjacencyMatrixColours" layoutX="174.0" layoutY="162.0" prefHeight="131.0" prefWidth="133.0" wrapText="true" />
+      <Text layoutX="42.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adjacency Matrix:* " />
+      <Text layoutX="351.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No. of colours:* " />
+      <Button fx:id="calculateColoursBtn" layoutX="529.0" layoutY="262.0" mnemonicParsing="false" onAction="#calculateColours" stylesheets="@vertexColouring.css" text="Calculate" />
+      <Text layoutX="44.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Solution:" />
+      <TextArea fx:id="solutionColours" editable="false" layoutX="134.0" layoutY="325.0" prefHeight="110.0" prefWidth="568.0" wrapText="true" />
+      <Button fx:id="clearColoursBtn" layoutX="648.0" layoutY="262.0" mnemonicParsing="false" onAction="#clearScreen" text="Clear" />
+      <CheckBox fx:id="showTimeBox" layoutX="44.0" layoutY="476.0" mnemonicParsing="false" onAction="#showTime" text="Show time taken:" />
+      <TextArea fx:id="timeArea" editable="false" layoutX="207.0" layoutY="463.0" prefHeight="48.0" prefWidth="497.0" wrapText="true" />
+      <TextField fx:id="numberOfColours" layoutX="461.0" layoutY="168.0" prefHeight="31.0" prefWidth="149.0" />
+      <Text layoutX="216.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(results in a way to colour nodes with minimal number of colours)" wrappingWidth="326.27490234375">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="42.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Format preferrence: entries separated by &quot;,&quot; each row on a new line" wrappingWidth="127.00000520050526">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

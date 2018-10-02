@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="984.0" styleClass="background" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.MainView">
+   <children>
+      <Text layoutX="297.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Graph Algorithms in Action">
+         <font>
+            <Font name="Bell MT Bold" size="29.0" />
+         </font>
+      </Text>
+      <Circle fill="DODGERBLUE" layoutX="476.0" layoutY="343.0" radius="77.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="417.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select your objective" textAlignment="CENTER" wrappingWidth="117.99999956786633">
+         <font>
+            <Font name="Bell MT Bold" size="23.0" />
+         </font>
+      </Text>
+      <Circle fx:id="vertexColouringCircle" fill="#b2d6f8" layoutX="776.0" layoutY="203.0" onMouseClicked="#loadVertexColouring" radius="59.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dijkstrasAlgorithmCircle" fill="#b2d6f8" layoutX="776.0" layoutY="490.0" onMouseClicked="#loadDijkstras" radius="59.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="hamiltonianCircle" fill="#b2d6f8" layoutX="177.0" layoutY="203.0" onMouseClicked="#loadHamiltonian" radius="59.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text fx:id="vertexColText" layoutX="717.0" layoutY="198.0" onMouseClicked="#loadVertexColouring" strokeType="OUTSIDE" strokeWidth="0.0" text="Vertex Colouring" textAlignment="CENTER" wrappingWidth="117.99999956786633">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="dijkstraText" layoutX="717.0" layoutY="485.0" onMouseClicked="#loadDijkstras" strokeType="OUTSIDE" strokeWidth="0.0" text="Dijkstra's Algorithm" textAlignment="CENTER" wrappingWidth="117.99999956786633">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font>
+      </Text>
+      <Circle fx:id="kruskalsAlgorithmCircle" fill="#b2d6f8" layoutX="165.0" layoutY="461.0" onMouseClicked="#loadKruskal" radius="59.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text fx:id="hamiltonianText" layoutX="118.0" layoutY="198.0" onMouseClicked="#loadHamiltonian" strokeType="OUTSIDE" strokeWidth="0.0" text="Hamiltonian Cycle/Path" textAlignment="CENTER" wrappingWidth="117.99999956786633">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="kruskalText" layoutX="106.0" layoutY="456.0" onMouseClicked="#loadKruskal" strokeType="OUTSIDE" strokeWidth="0.0" text="Kruskal's Algorithm" textAlignment="CENTER" wrappingWidth="117.99999956786633">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="625.0" layoutY="251.0" rotate="-24.4" startX="-100.0" />
+      <Line endX="100.0" layoutX="634.0" layoutY="421.0" rotate="23.2" startX="-100.0" />
+      <Line endX="100.0" layoutX="326.0" layoutY="252.0" rotate="-153.4" startX="-100.0" />
+      <Line endX="100.0" layoutX="320.0" layoutY="419.0" rotate="162.9" startX="-100.0" />
+   </children>
+</AnchorPane>
